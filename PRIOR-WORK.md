@@ -6,7 +6,7 @@ AIBoomi Startup Weekend rules allow a continued prototype if it is declared and 
 
 Petsona is a Shopify app and theme by Rexin Dynamics (Kochi) for merchant-owned pet profiles and pet-aware shopping. Work began in July 2026 and the production app is live at `admin.petsona.xyz`. The catalogue decision layer this submission focuses on was researched on 28 September 2026 (evaluation plan comparing Jev and Laya) and first built and deployed in shadow mode on the development store on 3-4 October 2026. The main repository is private because it holds legal drafts and operating documents; read access can be granted to judges on request.
 
-[Jerom to confirm: declared as a continued prototype at kickoff on 23 October 2026.]
+Petsona was declared as a continued prototype at the kickoff on 23 October 2026, as the rules require.
 
 ## What was built on 23-24 October 2026
 
