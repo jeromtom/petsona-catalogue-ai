@@ -9,9 +9,10 @@ Give it a pet store's product and it tells the merchant, with the exact source s
 | Item | Where |
 | --- | --- |
 | Event and team | AIBoomi Startup Weekend Kochi, solo team: Jerom Palimattom Tom, Rexin Dynamics |
+| Repository | https://github.com/jeromtom/petsona-catalogue-ai |
 | Run the AI slice locally | `npm install && npm test && npm run demo:all` (under a minute, no credentials needed) |
 | Live product | [petsona.xyz](https://petsona.xyz) (overview and 25-second demo video), [shop.petsona.xyz](https://shop.petsona.xyz) (live pet-aware search across Shopify merchants), [admin.petsona.xyz](https://admin.petsona.xyz) (merchant app, Shopify login required) |
-| Demo recording | [Jerom: add the screen-recording link] |
+| Demo recording | [`docs/petsona-catalogue-demo.gif`](docs/petsona-catalogue-demo.gif): the merchant catalogue on the live development store, opening a product's evidence review (recorded 24 October 2026) |
 | Pitch deck (6 slides) | [`docs/pitch-deck.pdf`](docs/pitch-deck.pdf), source in [`docs/pitch-deck.md`](docs/pitch-deck.md) |
 | AI Impact Statement | [`AI-IMPACT-STATEMENT.md`](AI-IMPACT-STATEMENT.md) |
 | Prior work and hack-window timeline | [`PRIOR-WORK.md`](PRIOR-WORK.md) |
@@ -45,6 +46,8 @@ Shopify product text and images, manufacturer page, label photo (OCR)
 The decision model is the point of the design. Jev and Laya are typed decision models: they take a state and closed questions and return a choice with a calibrated probability distribution in one forward pass. They never generate text, so there is nothing to parse and no invented ingredient can appear. Laya is open weight (Apache 2.0), which gives Petsona a self-hosting path. Full diagram and stage notes in [`docs/architecture.md`](docs/architecture.md).
 
 ![Merchant review of model verdicts in the Petsona admin](docs/screenshots/catalogue-review.png)
+
+![Recorded tour of the live catalogue: overview, evidence review, correction form](docs/petsona-catalogue-demo.gif)
 
 ## Setup and run
 
