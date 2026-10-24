@@ -13,6 +13,7 @@ Give it a pet store's product and it tells the merchant, with the exact source s
 | Run the AI slice locally | `npm install && npm test && npm run demo:all` (under a minute, no credentials needed) |
 | Live product | [petsona.xyz](https://petsona.xyz) (overview and 25-second demo video), [shop.petsona.xyz](https://shop.petsona.xyz) (live pet-aware search across Shopify merchants), [admin.petsona.xyz](https://admin.petsona.xyz) (merchant app, Shopify login required) |
 | Demo recording | [`docs/petsona-catalogue-demo.gif`](docs/petsona-catalogue-demo.gif): the merchant catalogue on the live development store, opening a product's evidence review (recorded 24 October 2026) |
+| Shopper comparison | [`docs/petsona-shopping-comparison.gif`](docs/petsona-shopping-comparison.gif): shopping for an adult cat on romsnraks.com as it is today, then on the private demonstration store with Petsona installed (recorded 24 October 2026) |
 | Pitch deck (6 slides) | [`docs/pitch-deck.pdf`](docs/pitch-deck.pdf), source in [`docs/pitch-deck.md`](docs/pitch-deck.md) |
 | AI Impact Statement | [`AI-IMPACT-STATEMENT.md`](AI-IMPACT-STATEMENT.md) |
 | Prior work and hack-window timeline | [`PRIOR-WORK.md`](PRIOR-WORK.md) |
@@ -48,6 +49,10 @@ The decision model is the point of the design. Jev and Laya are typed decision m
 ![Merchant review of model verdicts in the Petsona admin](docs/screenshots/catalogue-review.png)
 
 ![Recorded tour of the live catalogue: overview, evidence review, correction form](docs/petsona-catalogue-demo.gif)
+
+![Shopping for an adult cat on romsnraks.com today, then on the same catalogue with Petsona installed](docs/petsona-shopping-comparison.gif)
+
+The storefront side of the same loop: the shopper picks a pet once, and the store shows the products whose recorded species and life stage match that pet, with unavailable items and known ingredient conflicts excluded. Recorded on 24 October 2026 against romsnraks.com and the private demonstration store `rexin-rnr-petsona-demo.myshopify.com` (synthetic stock, no real orders).
 
 ## Setup and run
 
