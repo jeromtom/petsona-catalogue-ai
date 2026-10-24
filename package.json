@@ -1,0 +1,21 @@
+{
+  "name": "petsona-catalogue-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-backed pet product classification with typed decision models (Jev / Laya). AIBoomi Startup Weekend Kochi, 23-24 October 2026.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "demo": "tsx demo/classify.ts",
+    "demo:all": "tsx demo/classify.ts demo/samples/ocean-fish-adult-cat-food.json && tsx demo/classify.ts demo/samples/mini-adult-dog-food.json && tsx demo/classify.ts demo/samples/plush-fish-toy.json",
+    "demo:ocr": "tsx demo/ocr-label.ts demo/samples/label-ocr-text.txt"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
+  }
+}

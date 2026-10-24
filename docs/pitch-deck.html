@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Petsona Catalogue AI, pitch deck</title>
+<style>
+  @page { size: 13.333in 7.5in; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; color: #1b1f23; font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .slide { width: 13.333in; height: 7.5in; padding: 0.55in 0.7in 0.5in; page-break-after: always; position: relative; display: flex; flex-direction: column; }
+  .slide:last-child { page-break-after: auto; }
+  .kicker { color: #0f766e; font-size: 13pt; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; margin: 0 0 6pt; }
+  h1 { font-size: 30pt; line-height: 1.12; margin: 0 0 16pt; letter-spacing: -0.01em; }
+  h2 { font-size: 16pt; margin: 0 0 6pt; color: #0f766e; }
+  p, li { font-size: 14.5pt; line-height: 1.38; }
+  ul { margin: 0; padding-left: 1.1em; }
+  li { margin: 0 0 8pt; }
+  .cols { display: flex; gap: 0.45in; flex: 1; }
+  .col { flex: 1; }
+  .footer { position: absolute; left: 0.7in; right: 0.7in; bottom: 0.32in; display: flex; justify-content: space-between; font-size: 10pt; color: #6b7280; border-top: 1px solid #e5e7eb; padding-top: 6pt; }
+  .shot { width: 100%; border: 1px solid #e5e7eb; border-radius: 6pt; }
+  .flow { display: flex; align-items: stretch; gap: 8pt; margin: 6pt 0 14pt; }
+  .box { flex: 1; border: 1.5px solid #0f766e; border-radius: 6pt; padding: 8pt 9pt; font-size: 11.5pt; line-height: 1.3; background: #f0fdfa; }
+  .box b { display: block; color: #0f766e; font-size: 11pt; margin-bottom: 3pt; }
+  .arrow { align-self: center; color: #0f766e; font-size: 18pt; }
+  .stat { font-size: 36pt; font-weight: 700; color: #0f766e; line-height: 1; margin: 0 0 4pt; }
+  .muted { color: #6b7280; font-size: 12pt; }
+  code { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 12pt; background: #f3f4f6; padding: 1pt 4pt; border-radius: 3pt; }
+  table { border-collapse: collapse; width: 100%; font-size: 12.5pt; }
+  td, th { text-align: left; padding: 5pt 8pt; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+  th { color: #0f766e; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<section class="slide">
+  <p class="kicker">1 · Problem and who cares</p>
+  <h1>Your store knows the shopper.<br>It knows nothing about the pet.</h1>
+  <div class="cols">
+    <div class="col">
+      <ul>
+        <li>Pet-store product pages are free text. "Chicken-free" is a claim, "animal fat" hides its source, and a fish-shaped toy is not fish food.</li>
+        <li>Merchants hand-tag thousands of SKUs, or skip it. Parents of allergic pets read every label themselves.</li>
+        <li>Nothing in the store can say, with evidence, which products suit <em>this</em> pet.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Who cares</h2>
+      <ul>
+        <li><b>Merchants</b> on Shopify who want pet-aware discovery without a tagging project.</li>
+        <li><b>Shoppers</b> who saved a pet once and expect the store to remember it.</li>
+        <li><b>Pets</b> with allergies, life stages and sizes a store must never guess.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span>Petsona Catalogue AI · Rexin Dynamics</span><span>AIBoomi Startup Weekend Kochi, 23-24 Oct 2026</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">2 · Insight and why now</p>
+  <h1>Classification is a closed question,<br>not a writing task.</h1>
+  <div class="cols">
+    <div class="col">
+      <ul>
+        <li><b>Typed decision models</b> (TypeSafe Jev, open-weight Laya) answer "does this evidence support X?" with a calibrated probability in one forward pass.</li>
+        <li>They <b>never generate text</b>. Nothing to parse, nothing invented, uncertainty you can threshold per field.</li>
+        <li>Jev: US$0.042 per million input tokens. Laya: Apache 2.0 weights, a self-hosting path.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Why now</h2>
+      <p>Shopify's agentic commerce (Global Catalog, agent profiles) makes structured, evidence-backed product attributes the currency. Laya shipped in September 2026 with free hosting through October.</p>
+      <h2>Why us</h2>
+      <p>Petsona already owns the pet profile inside the merchant's store, live in production, with the Finder that consumes these attributes.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Petsona Catalogue AI · Rexin Dynamics</span><span>2 / 6</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">3 · Solution demo</p>
+  <h1>Evidence in, verdicts out, merchant in control.</h1>
+  <div class="flow">
+    <div class="box"><b>Product</b>text, variants, images, manufacturer page, label OCR</div><div class="arrow">→</div>
+    <div class="box"><b>Evidence spans</b>every sentence gets an ID</div><div class="arrow">→</div>
+    <div class="box"><b>Typed verdicts</b>supported · contradicted · unknown · conflicting</div><div class="arrow">→</div>
+    <div class="box"><b>Merchant review</b>approve, correct, lock</div><div class="arrow">→</div>
+    <div class="box"><b>Pet Picks</b>only eligible products for this pet</div>
+  </div>
+  <div class="cols">
+    <div class="col" style="flex: 1.35">
+      <img class="shot" src="screenshots/catalogue-review.png" alt="Petsona admin: review table with attribute, value, evidence status and source">
+    </div>
+    <div class="col">
+      <ul>
+        <li>Review table shows the value, its evidence status and the source sentence.</li>
+        <li>"Not suitable for kittens" beside "adult cats" is surfaced as a <b>conflict</b>, never resolved silently.</li>
+        <li>Allergen absence is published only when the merchant attests it.</li>
+        <li><code>npm run demo:all</code> reproduces the pipeline in under a minute. Set a key for live verdicts.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span>Petsona Catalogue AI · Rexin Dynamics</span><span>3 / 6</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">4 · Technical approach</p>
+  <h1>Deterministic where it can be, typed where it must be, generative only to re-order.</h1>
+  <div class="cols">
+    <div class="col">
+      <h2>Stack</h2>
+      <ul>
+        <li>TypeScript monorepo: Shopify app (React Router), Cloud Run asia-southeast1, Neon Postgres, Cloud Tasks, daily reconciliation.</li>
+        <li>Evidence: product text, verified manufacturer pages (robots.txt, GTIN or SKU match), Cloud Vision OCR of the merchant's own label photos.</li>
+        <li>Decisions: one atomic four-way question per value, up to 20 per request, Jev 1.13.0 or Laya via Vercel AI Gateway, token windows with the pinned Laya tokenizer.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Guardrails</h2>
+      <ul>
+        <li>Pinned model identity and full probability distributions checked on every response.</li>
+        <li>Spend ledger in micro-dollars, rate-limit admission, idempotent source and plan hashes.</li>
+        <li>Missing text is never absence. Merchant overrides lock across refreshes.</li>
+        <li>Pet Picks filters deterministically first. A Groq-hosted LLM may only re-order at most 20 already eligible products.</li>
+      </ul>
+      <p class="muted">115 tests in the submission repo; 1,500+ unit tests and 384 browser tests in the main repo.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Petsona Catalogue AI · Rexin Dynamics</span><span>4 / 6</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">5 · Value and go-to-market</p>
+  <h1>Merchants pay for a store that knows the pet.</h1>
+  <div class="cols">
+    <div class="col">
+      <h2>Who pays</h2>
+      <p>Merchants, through Petsona's recurring plans: Free, Growth US$29, Scale US$79 per month. Catalogue intelligence sits in the paid tiers.</p>
+      <h2>Unit economics</h2>
+      <p>A 10,000-product catalogue at 20,000 input tokens each: about <b>US$8.40</b> per full pass on Jev. OCR: US$1.50 per 1,000 images after the free tier. Laya self-hosted: fixed infrastructure, no per-call fee.</p>
+    </div>
+    <div class="col">
+      <h2>How we reach them</h2>
+      <ul>
+        <li>Shopify App Store listing (pet-profile app already live in production).</li>
+        <li>Outbound to pet retailers: cold-email campaign running since October 2026.</li>
+        <li>Theme plus app bundle for stores that want the shopper experience out of the box.</li>
+        <li>Partner case studies from the first merchants.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span>Petsona Catalogue AI · Rexin Dynamics</span><span>5 / 6</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">6 · Roadmap and risks</p>
+  <h1>Measure before we promise.</h1>
+  <div class="cols">
+    <div class="col">
+      <h2>Next four weeks</h2>
+      <ul>
+        <li>Labelled benchmark: 400 product families, 120 pet-preference cases, two annotators with adjudication, brand-separated splits.</li>
+        <li>Per-field acceptance thresholds from measured calibration.</li>
+        <li>Self-hosted Laya on Cloud Run before the free alias ends on 31 October.</li>
+        <li>OCR switched on for pilot stores.</li>
+      </ul>
+      <h2>Then</h2>
+      <p>Multilingual labels, variant-level sizing tables, more verified manufacturer profiles.</p>
+    </div>
+    <div class="col">
+      <h2>Risks we are naming</h2>
+      <ul>
+        <li>Accuracy is unmeasured today: zero independently reviewed labels.</li>
+        <li>Provider promotion ends; paid or self-hosted path must be chosen.</li>
+        <li>Evidence status is not medical advice. Allergen absence stays a merchant attestation.</li>
+        <li>Manufacturer pages vary. One development store so far.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span>Petsona Catalogue AI · Rexin Dynamics · jerom@rexindynamics.com</span><span>6 / 6</span></div>
+</section>
+
+</body>
+</html>

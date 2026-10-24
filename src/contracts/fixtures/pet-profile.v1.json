@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "name": "Milo",
+  "species": "Dog",
+  "breed": "Golden Retriever",
+  "birthday": "2021-04-18",
+  "gender": "Male",
+  "notes": "Prefers quiet feeding areas.",
+  "weightKg": 28.4,
+  "allergies": ["Chicken"],
+  "diet": "Grain Free",
+  "activity": "High",
+  "vetDiet": false,
+  "lifeStage": "Adult",
+  "quizProfile": {
+    "version": 1,
+    "answers": {
+      "species": "dog"
+    }
+  }
+}

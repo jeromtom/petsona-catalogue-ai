@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "species": "Dog",
+  "breed": "Golden Retriever",
+  "ageMonths": 42,
+  "weightKg": 28.4,
+  "allergies": ["Chicken"],
+  "diet": "Grain Free",
+  "activity": "High"
+}

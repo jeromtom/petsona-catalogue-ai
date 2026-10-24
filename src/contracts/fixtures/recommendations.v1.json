@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "productId": "gid://shopify/Product/1001",
+      "reason": "Suitable for Milo's species, life stage, and diet.",
+      "score": 0.96
+    },
+    {
+      "productId": "gid://shopify/Product/1002",
+      "reason": "Matches Milo's activity level without the excluded allergen.",
+      "score": 0.89
+    }
+  ]
+}

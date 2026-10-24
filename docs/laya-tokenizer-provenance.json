@@ -1,0 +1,50 @@
+{
+  "repository": "convaiinnovations/laya",
+  "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+  "license": "Apache-2.0",
+  "purpose": "Token counting only; no model weights are included. Hosted checkpoint equivalence remains unverified.",
+  "files": [
+    {
+      "path": "english-tokenizer.json",
+      "url": "https://huggingface.co/convaiinnovations/laya/resolve/7b928d828b7b0e022f929d9bd2e44165aa270148/tokenizer/tokenizer.json",
+      "sha256": "6c8aaa9a542084f2457eab775d4eeb51f92a70c0fd9de28d5edb0ddec3c08d30",
+      "bytes": 3583228
+    },
+    {
+      "path": "english-tokenizer_config.json",
+      "url": "https://huggingface.co/convaiinnovations/laya/resolve/7b928d828b7b0e022f929d9bd2e44165aa270148/tokenizer/tokenizer_config.json",
+      "sha256": "50044de60daaa73df97d262e15a40d4faf0160e7d742df64b377877a1320dd12",
+      "bytes": 308
+    },
+    {
+      "path": "multilingual-tokenizer.json",
+      "url": "https://huggingface.co/convaiinnovations/laya/resolve/7b928d828b7b0e022f929d9bd2e44165aa270148/multilingual/tokenizer/tokenizer.json",
+      "sha256": "609d8f4c067cd3950f88594c5a802616cea245823836ef5848ee4fc40aab5b6f",
+      "bytes": 34363188
+    },
+    {
+      "path": "multilingual-tokenizer_config.json",
+      "url": "https://huggingface.co/convaiinnovations/laya/resolve/7b928d828b7b0e022f929d9bd2e44165aa270148/multilingual/tokenizer/tokenizer_config.json",
+      "sha256": "6c6b2d8e3c84ce0e671c129cd6b374b235d6f9863042a5836358d00a89bbb5a1",
+      "bytes": 524
+    },
+    {
+      "path": "english-agent-config.json",
+      "url": "https://huggingface.co/convaiinnovations/laya/resolve/7b928d828b7b0e022f929d9bd2e44165aa270148/rl_agent_config.json",
+      "sha256": "ae287b56bbcf5f8c4f4541ae9dfd00c914c4c48b940b8398c3058af37ba92bbd",
+      "bytes": 745
+    },
+    {
+      "path": "multilingual-agent-config.json",
+      "url": "https://huggingface.co/convaiinnovations/laya/resolve/7b928d828b7b0e022f929d9bd2e44165aa270148/multilingual/rl_agent_config.json",
+      "sha256": "25061739243b617ad88d1219ba6f8a9c86c5881ca28df024fa2d9b3b2fcc30c6",
+      "bytes": 472
+    },
+    {
+      "path": "MODEL-README.md",
+      "url": "https://huggingface.co/convaiinnovations/laya/resolve/7b928d828b7b0e022f929d9bd2e44165aa270148/README.md",
+      "sha256": "00355613796b3f5860b0d5b20392381d26580ec242e04a1fd150c7f116858602",
+      "bytes": 23187
+    }
+  ]
+}

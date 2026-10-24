@@ -1,0 +1,9 @@
+{
+  "species": ["dog"],
+  "breeds": ["golden-retriever"],
+  "sizeBands": ["large"],
+  "lifeStages": ["adult"],
+  "allergens": ["beef"],
+  "diets": ["grain-free"],
+  "consumptionDays": 30
+}

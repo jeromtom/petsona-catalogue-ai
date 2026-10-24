@@ -1,0 +1,18 @@
+{
+  "id": "gid://shopify/Product/9001",
+  "title": "Ocean Fish Adult Cat Food 2 kg",
+  "description": "Complete and balanced dry food for adult cats from 12 months of age. Not suitable for kittens. Ingredients: ocean fish (26%), chicken meal, rice, maize gluten, animal fat, dried beet pulp, fish oil, minerals. Feeding guide: 40-60 g per day for a 4 kg cat.",
+  "vendor": "Demo Pet Foods",
+  "productType": "Cat food",
+  "tags": ["cat", "dry food"],
+  "region": "IN",
+  "variants": [
+    {
+      "id": "gid://shopify/ProductVariant/90011",
+      "title": "2 kg",
+      "sku": "OFA-2KG",
+      "barcode": null,
+      "selectedOptions": [{ "name": "Size", "value": "2 kg" }]
+    }
+  ]
+}
